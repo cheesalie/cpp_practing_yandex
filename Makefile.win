@@ -1,0 +1,103 @@
+# Project: project_study_tasks
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = 2_section/2_1_first_steps/1.o 2_section/2_1_first_steps/2.o main_run.o 2_section/2_2_data_types/1.o 2_section/2_2_data_types/2.o 2_section/2_3_branches_and_cycles/1.o 2_section/2_3_branches_and_cycles/2.o 2_section/2_3_branches_and_cycles/3.o 2_section/2_3_branches_and_cycles/4.o 2_section/2_3_branches_and_cycles/5.o 2_section/2_3_branches_and_cycles/6.o 2_section/2_3_branches_and_cycles/7.o 2_section/2_4_vectors_and_strings/1.o 2_section/2_4_vectors_and_strings/2.o 2_section/2_4_vectors_and_strings/3.o 2_section/2_4_vectors_and_strings/4.o 2_section/2_4_vectors_and_strings/5.o 2_section/2_4_vectors_and_strings/6.o 2_section/2_7_functions/1.o 2_section/2_7_functions/2.o 2_section/2_7_functions/3.o 2_section/2_7_functions/4.o 2_section/2_7_functions/5.o 2_section/2_7_functions/6.o other_tasks/reverse_int.o other_tasks/arithm_mean.o
+LINKOBJ  = 2_section/2_1_first_steps/1.o 2_section/2_1_first_steps/2.o main_run.o 2_section/2_2_data_types/1.o 2_section/2_2_data_types/2.o 2_section/2_3_branches_and_cycles/1.o 2_section/2_3_branches_and_cycles/2.o 2_section/2_3_branches_and_cycles/3.o 2_section/2_3_branches_and_cycles/4.o 2_section/2_3_branches_and_cycles/5.o 2_section/2_3_branches_and_cycles/6.o 2_section/2_3_branches_and_cycles/7.o 2_section/2_4_vectors_and_strings/1.o 2_section/2_4_vectors_and_strings/2.o 2_section/2_4_vectors_and_strings/3.o 2_section/2_4_vectors_and_strings/4.o 2_section/2_4_vectors_and_strings/5.o 2_section/2_4_vectors_and_strings/6.o 2_section/2_7_functions/1.o 2_section/2_7_functions/2.o 2_section/2_7_functions/3.o 2_section/2_7_functions/4.o 2_section/2_7_functions/5.o 2_section/2_7_functions/6.o other_tasks/reverse_int.o other_tasks/arithm_mean.o
+LIBS     = -L"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/lib" -L"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/include" -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/include" -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/a.nazarova/Downloads/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = study_tasks.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+DEL      = C:\Users\a.nazarova\Downloads\Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Portable\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+2_section/2_1_first_steps/1.o: 2_section/2_1_first_steps/1.cpp
+	$(CPP) -c 2_section/2_1_first_steps/1.cpp -o 2_section/2_1_first_steps/1.o $(CXXFLAGS)
+
+2_section/2_1_first_steps/2.o: 2_section/2_1_first_steps/2.cpp
+	$(CPP) -c 2_section/2_1_first_steps/2.cpp -o 2_section/2_1_first_steps/2.o $(CXXFLAGS)
+
+main_run.o: main_run.cpp
+	$(CPP) -c main_run.cpp -o main_run.o $(CXXFLAGS)
+
+2_section/2_2_data_types/1.o: 2_section/2_2_data_types/1.cpp
+	$(CPP) -c 2_section/2_2_data_types/1.cpp -o 2_section/2_2_data_types/1.o $(CXXFLAGS)
+
+2_section/2_2_data_types/2.o: 2_section/2_2_data_types/2.cpp
+	$(CPP) -c 2_section/2_2_data_types/2.cpp -o 2_section/2_2_data_types/2.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/1.o: 2_section/2_3_branches_and_cycles/1.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/1.cpp -o 2_section/2_3_branches_and_cycles/1.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/2.o: 2_section/2_3_branches_and_cycles/2.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/2.cpp -o 2_section/2_3_branches_and_cycles/2.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/3.o: 2_section/2_3_branches_and_cycles/3.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/3.cpp -o 2_section/2_3_branches_and_cycles/3.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/4.o: 2_section/2_3_branches_and_cycles/4.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/4.cpp -o 2_section/2_3_branches_and_cycles/4.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/5.o: 2_section/2_3_branches_and_cycles/5.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/5.cpp -o 2_section/2_3_branches_and_cycles/5.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/6.o: 2_section/2_3_branches_and_cycles/6.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/6.cpp -o 2_section/2_3_branches_and_cycles/6.o $(CXXFLAGS)
+
+2_section/2_3_branches_and_cycles/7.o: 2_section/2_3_branches_and_cycles/7.cpp
+	$(CPP) -c 2_section/2_3_branches_and_cycles/7.cpp -o 2_section/2_3_branches_and_cycles/7.o $(CXXFLAGS)
+
+2_section/2_4_vectors_and_strings/1.o: 2_section/2_4_vectors_and_strings/1.cpp
+	$(CPP) -c 2_section/2_4_vectors_and_strings/1.cpp -o 2_section/2_4_vectors_and_strings/1.o $(CXXFLAGS)
+
+2_section/2_4_vectors_and_strings/2.o: 2_section/2_4_vectors_and_strings/2.cpp
+	$(CPP) -c 2_section/2_4_vectors_and_strings/2.cpp -o 2_section/2_4_vectors_and_strings/2.o $(CXXFLAGS)
+
+2_section/2_4_vectors_and_strings/3.o: 2_section/2_4_vectors_and_strings/3.cpp
+	$(CPP) -c 2_section/2_4_vectors_and_strings/3.cpp -o 2_section/2_4_vectors_and_strings/3.o $(CXXFLAGS)
+
+2_section/2_4_vectors_and_strings/4.o: 2_section/2_4_vectors_and_strings/4.cpp
+	$(CPP) -c 2_section/2_4_vectors_and_strings/4.cpp -o 2_section/2_4_vectors_and_strings/4.o $(CXXFLAGS)
+
+2_section/2_4_vectors_and_strings/5.o: 2_section/2_4_vectors_and_strings/5.cpp
+	$(CPP) -c 2_section/2_4_vectors_and_strings/5.cpp -o 2_section/2_4_vectors_and_strings/5.o $(CXXFLAGS)
+
+2_section/2_4_vectors_and_strings/6.o: 2_section/2_4_vectors_and_strings/6.cpp
+	$(CPP) -c 2_section/2_4_vectors_and_strings/6.cpp -o 2_section/2_4_vectors_and_strings/6.o $(CXXFLAGS)
+
+2_section/2_7_functions/1.o: 2_section/2_7_functions/1.cpp
+	$(CPP) -c 2_section/2_7_functions/1.cpp -o 2_section/2_7_functions/1.o $(CXXFLAGS)
+
+2_section/2_7_functions/2.o: 2_section/2_7_functions/2.cpp
+	$(CPP) -c 2_section/2_7_functions/2.cpp -o 2_section/2_7_functions/2.o $(CXXFLAGS)
+
+2_section/2_7_functions/3.o: 2_section/2_7_functions/3.cpp
+	$(CPP) -c 2_section/2_7_functions/3.cpp -o 2_section/2_7_functions/3.o $(CXXFLAGS)
+
+2_section/2_7_functions/4.o: 2_section/2_7_functions/4.cpp
+	$(CPP) -c 2_section/2_7_functions/4.cpp -o 2_section/2_7_functions/4.o $(CXXFLAGS)
+
+2_section/2_7_functions/5.o: 2_section/2_7_functions/5.cpp
+	$(CPP) -c 2_section/2_7_functions/5.cpp -o 2_section/2_7_functions/5.o $(CXXFLAGS)
+
+2_section/2_7_functions/6.o: 2_section/2_7_functions/6.cpp
+	$(CPP) -c 2_section/2_7_functions/6.cpp -o 2_section/2_7_functions/6.o $(CXXFLAGS)
+
+other_tasks/reverse_int.o: other_tasks/reverse_int.cpp
+	$(CPP) -c other_tasks/reverse_int.cpp -o other_tasks/reverse_int.o $(CXXFLAGS)
+
+other_tasks/arithm_mean.o: other_tasks/arithm_mean.cpp
+	$(CPP) -c other_tasks/arithm_mean.cpp -o other_tasks/arithm_mean.o $(CXXFLAGS)
